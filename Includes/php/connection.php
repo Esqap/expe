@@ -7,11 +7,18 @@ if( preg_match ("/connection.php/", $_SERVER['PHP_SELF']) )
 	
 }
 
-
-define("HOST","localhost");
-define("PASS","xt5a16LQw3");
-define("DB","esqapcom_esqap");
-define("USER","esqapcom_root");
+if (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false){
+	define("HOST","localhost");
+	define("PASS","");
+	define("DB","expe");
+	define("USER","root");
+}
+else{
+	define("HOST","srv38");
+	define("PASS","xt5a16LQw3");
+	define("DB","esqapcom_esqap");
+	define("USER","esqapcom_root");
+}
 
 $con=mysqli_connect(HOST,USER,PASS);
 $database=mysqli_select_db($con,DB);
