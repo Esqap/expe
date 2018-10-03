@@ -1,0 +1,494 @@
+html, body {
+    height:100%;
+	
+}
+
+body.header{
+	
+	    padding-top: 65px; 
+		background:rgb(240,240,240) !important;
+
+}
+
+
+
+header
+{
+background:#204d74;
+height:auto;
+min-height:100px;
+padding-top:20px;
+color:white;
+
+}
+
+.clear
+{
+
+clear:both;
+}
+.login form
+{
+float:right;
+padding-top:12px;
+}
+
+h2.logo-heading
+
+{
+
+font-family: 'Montserrat', sans-serif;
+
+color:white;
+}
+
+
+
+
+.navbar-form
+{
+float:right;
+
+}
+
+#index section
+
+{
+
+
+background:rgb(245,245,245);
+color:black;
+padding-top:60px;
+min-height: 100%;
+}
+
+.sign-up
+{
+
+
+}
+
+.sign-up h2
+{
+padding-bottom:40px;
+
+}
+
+.signup-inp
+
+{
+
+margin-bottom:30px;
+}
+
+p
+{
+
+padding-top:40px;
+font-family: 'Lato', sans-serif;
+width:70%;
+font-size:117%;
+text-align:justify;
+word-spacing:2px;
+}
+
+.profile-follow-btn
+
+
+
+
+
+h3
+
+{
+
+font-family:"Lucida Sans Unicode";
+color:rgb(70,70,70);
+}
+
+.navbar-form
+{
+float:right;
+
+}
+.panel-body{
+  padding: 0px;
+}
+
+.panel-default {
+  border-color: rgb(200,200,200);
+}
+
+.btn.follow {
+  display: block;
+  padding: 4px 10px;
+  margin-bottom: 0;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+
+}
+
+
+section
+
+{
+background:rgb(240,240,240) !important;
+
+
+}
+
+a
+{
+	text-decoration:none !important;
+	
+	
+}
+.row.post-exp
+{
+padding-left:10px;
+padding-top:10px;
+}
+
+hr.post-divider
+{
+padding-left:0;
+margin-bottom:0px;
+margin-top:15px;
+
+}
+
+.exp{
+
+padding-top:0;
+
+}
+
+.post-status
+{
+font-size:96%;
+
+}
+
+.post-conclusion
+{
+font-size:96%;
+display:block;
+margin-top:10px;
+}
+
+.post-reaction
+{
+padding-left:10px;
+margin-bottom:15px;
+}
+
+.reaction{
+font-size:90%; 
+color:rgb(100,100,100);
+font-family:'Lato', sans-serif;
+
+}
+
+.reaction:hover
+{
+color:#337ab7;
+cursor:pointer;
+
+
+}
+
+.col-xs-2.reaction
+{
+
+margin-right:8px;
+
+}
+
+.share
+{
+	margin-left:8px;
+}
+
+.user-about-heading
+{
+
+display:inline-block;
+font-size:130%;
+padding-left:5px;
+}
+
+.about-form
+{
+margin-top:20px;
+}
+
+.info
+{
+padding-bottom:5px;
+margin-top:20px;
+color:grey;
+text-align:center;
+
+
+}
+.info.ed-info
+{
+
+margin-top:30px;
+}
+
+.add-more
+{
+
+margin:0;
+padding:0;
+padding-top:5px;
+
+}
+
+
+.followers
+{
+
+margin:0;
+margin-top:5px;
+font-size:114%;
+padding:0;
+padding-left:30px;
+}
+
+
+
+.grp-header .grp-cover 
+{
+height:300px;
+width:100%;
+}
+
+.grp-header hr
+{
+margin:0;
+padding:0;
+margin-bottom:30px;
+}
+
+.grp-name
+{
+font-size:120%;
+display:table;
+padding-top:10px;
+padding-bottom:10px;
+margin:0 auto;
+}
+
+.grp-post-box
+{
+
+}
+
+
+.page-header
+{
+position:relative;
+}
+
+.page-header .page-photo
+{
+width:10px;
+height:200px;
+position:absolute;
+bottom:0;
+}
+
+.grp-des-photo
+{
+
+display:table;
+margin:0 auto;
+width:60px;
+height:60px;
+margin-top:10px;
+}
+
+.grp-des-text
+{
+text-align:justify;
+padding:10px;
+
+}
+
+
+.profile_pic img
+{
+width:260.5px; 
+height:300px;	
+	
+}
+
+
+.sidebar.col-xs-push-1
+{
+	 left: 2.33333333%;
+}
+
+textarea
+{
+width:100%; 
+resize:none;
+}
+
+.panel_more .image
+{
+    padding:0;
+    
+}
+
+.panel_more .text
+{
+    padding:0;
+   
+    
+}
+
+.top-nav
+{
+	background:#204d74 !important;
+	color:white !important;
+	font-family: 'Montserrat', sans-serif;
+	
+
+	
+}
+
+.top-nav a
+
+{
+	color:white !important;
+}
+
+.top
+{
+	margin-left:240px;
+}
+
+.dropdown-menu a
+{
+	color:black !important;
+}
+
+
+.top
+{
+	margin-left:240px;
+}
+
+.dropdown
+{
+	position:relative;
+	display:grid;
+}
+
+.dropdown-menu
+{
+	
+	position:absolute;
+	left:-60px;
+}
+
+.list-group-item
+{
+	
+	    border: 1px solid rgb(235,235,235);
+		padding:15px 15px;
+
+	
+}
+
+
+.navbar-icons
+{
+position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size:20px;
+   margin-top:1px;
+  
+  }
+  
+  .icon-nav
+  {
+	  
+	  padding-left:20px;
+	 
+  }
+
+ /***Styling Exp Post Box***/
+ 
+
+.view_exp_post_box_footer
+{
+
+background:white;
+border:none;
+border-radius:30px;
+}
+
+ /***Styling Comment Box And Button***/
+
+.modal-comment-txtarea
+{
+	padding-left:15px;
+}
+
+.modal-comment-btn
+{
+	left:-1px;
+}
+
+.browse
+{
+    
+    padding-top:10px;
+}
+
+.sug-sidebar-heading{
+    padding:0; 
+    margin:0; 
+    margin-top:5px; 
+    margin-bottom:5px;
+    
+}
+
+.form-control:focus {
+    border-color: none;
+    box-shadow:none;
+}
+	
+/*Verification Form Styling */
+.verify-form
+{
+		font-family: montserrat, arial, verdana;
+}
+
+/* Panel Box Heading Styling */
+.box-heading{
+	padding:0; 
+	margin:0; 
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+/* About Us Form Input Styling*/
+.about-input {
+	padding-bottom:20px;
+	
+}

@@ -1,0 +1,9 @@
+[21-Jul-2018 17:24:53 UTC] PHP Fatal error:  Cannot redeclare validateString() (previously declared in /home/esqapcom/public_html/php_work/postexpe.php:7) in /home/esqapcom/public_html/Includes/php/funtions.php on line 111
+[21-Jul-2018 17:27:38 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/esqapcom/public_html/php_work/postexpe.php on line 12
+[21-Jul-2018 17:27:41 UTC] PHP Warning:  mysqli_real_escape_string() expects exactly 2 parameters, 1 given in /home/esqapcom/public_html/php_work/postexpe.php on line 12
+[05-Aug-2018 12:32:02 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/esqapcom/public_html/php_work/postexpe.php on line 170
+[05-Aug-2018 12:49:43 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/esqapcom/public_html/php_work/postexpe.php on line 171
+[05-Aug-2018 12:50:39 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/esqapcom/public_html/php_work/postexpe.php on line 171
+[05-Aug-2018 12:51:47 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/esqapcom/public_html/php_work/postexpe.php on line 171
+[01-Oct-2018 20:19:14 UTC] PHP Warning:  mysqli_connect(): (HY000/1040): Too many connections in /home/esqapcom/public_html/Includes/php/connection.php on line 16
+[01-Oct-2018 20:19:14 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/esqapcom/public_html/Includes/php/connection.php on line 17
