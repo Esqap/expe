@@ -102,7 +102,7 @@
 							<?php
 								if($veri != 1){
 							?>
-								<li><a href="verify.php">Verify</a></li>
+								<li><a href="verify.php">Become an Expert</a></li>
 							<?php } ?>
 							<li><a href="#mtoggle" data-toggle="modal">Referral Link</a></li>
 							<li><a href="logout.php">Logout</a></li>
@@ -169,7 +169,7 @@
                         <?php
 						if($veri != 1){
 						?>
-						<a href="verify_user.php" class="list-group-item "> <span class="glyphicon glyphicon-user" style="margin-right:7px; font-size:13px;"></span> Verify Account</a>
+						<a href="verify_user.php" class="list-group-item "> <span class="glyphicon glyphicon-user" style="margin-right:7px; font-size:13px;"></span> Become an Expert</a>
 						<?php } ?>
 						<a href="feedback.php" class="list-group-item  "><span class="glyphicon glyphicon-log-out" style="margin-right:7px; font-size:13px;"></span> Feedback</a>
 						<a href="#mtoggle" data-toggle="modal" class="list-group-item ">
@@ -188,9 +188,11 @@
 </div>			
 			
 			</div>
+
 			
 		</div><!----End Container --->
 	</nav>
+
 	<?php 
 	if(isset($_GET['noti'])){
 		$update_query="UPDATE users set notify='0' where email='$user_email'";

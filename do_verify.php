@@ -1,5 +1,7 @@
 <?php
 session_start();
+    require("vendor/autoload.php");
+
 include('Includes/php/funtions.php');
 Include("Includes/php/connection.php");
 if($_POST['task'] == 'e_email_verify' ){
@@ -26,15 +28,11 @@ if($_POST['task'] == 'e_email_verify' ){
     $msg .= "Reason : $reason"."<br>";
 
     
-$to = "info@esqap.com";							 
-		$from = "admin@esqap.com";
-		$subject = 'Expert Verification';
-		$message = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>ESQAP Message</title></head><body style="margin:0px; font-family:Tahoma, Geneva, sans-serif;"><div style="padding:10px; background:#333; font-size:24px; color:#CCC;">ESQAP Account Activation</div><div style="padding:24px; font-size:17px;">'.$msg.'<a href="http://www.esqap.com/do_expert_verify.php?u='.$id.'">Verify</a></b></div></body></html>';
+$to = "haniabidkz@gmail.com";							 
+		$subject = 'Expert Account Verification';
+		$message = '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>ESQAP Message</title></head><body style="margin:0px; font-family:Tahoma, Geneva, sans-serif;"><div style="padding:10px; background:#333; font-size:24px; color:#CCC;">'.$name.' Wants to Become a Expert, Details are</div><div style="padding:24px; font-size:17px;">'.$msg.'<a href="http://www.esqap.com/do_expert_verify.php?u='.$id.'">Activate Expert Account</a></b></div></body></html>';
 	
-		$headers = "From: info@esqap.com\n";
-        $headers .= "MIME-Version: 1.0\n";
-        $headers .= "Content-type: text/html; charset=iso-8859-1\n";
-		mail($to, $subject, $message, $headers);
+		sendMail($to,$subject,$message);
 
     $update = "UPDATE users set expert_verify='2' where u_id='$id'";
 

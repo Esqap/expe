@@ -14,6 +14,15 @@ if($row['expert_verify'] == 2){
 <?php
 }else{
 ?>
+
+
+<div class="container" id="success-mesg" style="display: none;">
+	<div class="row alert alert-info">
+		Your request for verification has been sent.
+	</div>
+</div>
+
+<div class="container" id="verify-box">
 <input type="hidden" id="u_id" value="<?= $uid ?>">
 <div class="container">
 <div class="row">
@@ -352,11 +361,12 @@ $(document).ready(function(){
 					twi : val_t,
 					li : val_li,
 					reason : val_reason
+				},
+				success:function(){
+					$("#success-mesg").css("display","block");
+					$("#verify-box").css("display","none");
 				}
-			}).done(function(data){
-				window.location.href ="experience.php?id="+data;
-				// alert(data);
-			})
+			});
 		}
 	});
 

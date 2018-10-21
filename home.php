@@ -15,7 +15,26 @@ $sel_verify="SELECT verified from users where email='$user_email'";
 	}else{ 
 if(isset($user_email))
 {
+    $q="select * from users where email='$user_email' AND expert_verify=0";
+    $res=mysqli_query($con,$q);
+    if(mysqli_num_rows($res)>0){
 ?>
+
+    <!---Become an Expert Banner -->
+    <div class="container">
+        <div class="panel panel-default text-center">
+            <div class="jumbotron text-center jumbo" style="background: white;">
+                <h3 class="display-3" style="font-family: 'Montserrat', sans-serif">Become an Expert</h3>
+                <div class="lead">Become a expert and share your experiences around the globe</div>
+                <a href="verify_user.php">
+                    <button class="btn btn-primary btn-lg button ">Apply</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!---Become an Expert Banner Closed -->
+
+<?php } ?>
     <section > 
         <div class="container">
             <div class="row">

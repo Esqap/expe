@@ -1,5 +1,8 @@
 <?php
 
+    
+    use PHPMailer\PHPMailer\PHPMailer;
+
     //Function To Show Random Users On Freinds Suggestion Sidebar When User Is Not Logged In//
     function show_suggested_random_users()
     {
@@ -128,7 +131,26 @@
     }
     //END
 
-
+    function sendMail($to,$subject,$mesg){
+        $mail=new PHPMailer();
+        $mail->isSMTP();
+        $mail->SMTPDebug=0;
+        $mail->Host="smtp.gmail.com";
+        $mail->SMTPSecure="tls";
+        $mail->SMTPAuth = true;
+        $mail->SMTPPort="587";
+        $mail->Username = "latestexperience123@gmail.com";
+        $mail->Password = "pakistanzindabad";
+        $mail->setFrom("latestexperience123@gmail.com","ESQAP");
+        $mail->msgHTML($mesg);  
+        $mail->addReplyTo('info@esqap.com', 'ESQAP');
+        $mail->addAddress($to);
+        $mail->Subject = $subject;
+        if($mail->send()){
+            return true;
+        }
+        $mesg="Mail Not Sent, Try Again";
+    }
 ?>
 	
 	
